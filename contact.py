@@ -24,6 +24,11 @@ class Contact(unittest.TestCase):
         driver.get (self.base_url + "contact")
         driver.find_element_by_xpath ("//*[@id='box_form']")
 
+    def test_contact_title
+        driver = self.driver
+        driver.get (self.base_url + "contact")
+        driver.find_element_by_xpath ("/html/body/div[2]/div[7]/div/div/div/h2").text
+
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)
         except NoSuchElementException, e: return False
